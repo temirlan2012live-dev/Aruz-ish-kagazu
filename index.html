@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Арыз иш кагазы</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#eef3f8;
+color:#222;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(135deg,#0d47a1,#1976d2);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+header p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+opacity:0.9;
+}
+
+.container{
+max-width:1100px;
+margin:40px auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:18px;
+margin-bottom:25px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+h2{
+color:#1565c0;
+margin-bottom:15px;
+}
+
+ul{
+padding-left:20px;
+margin-top:10px;
+}
+
+.example{
+background:#f5f7fa;
+padding:20px;
+border-left:5px solid #1976d2;
+border-radius:10px;
+margin-top:15px;
+white-space:pre-line;
+}
+
+button{
+margin-top:20px;
+padding:14px 28px;
+border:none;
+border-radius:10px;
+background:#1976d2;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#0d47a1;
+}
+
+footer{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.student{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+text-align:center;
+animation:fadeUp 1.2s ease;
+transition:0.4s;
+}
+
+.student:hover{
+transform:scale(1.03);
+}
+
+.student h2{
+color:#1565c0;
+margin-bottom:15px;
+font-size:28px;
+}
+
+.student p{
+font-size:20px;
+font-weight:bold;
+color:#333;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@media(max-width:700px){
+
+header h1{
+font-size:30px;
+}
+
+header p{
+font-size:16px;
+}
+
+.card{
+padding:20px;
+}
+
+button{
+width:100%;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Арыз иш кагазы</h1>
+<p>
+Арыз — бул расмий документ. Ал мекемеге, мектепке же ишканага кандайдыр бир өтүнүч же маалымат берүү үчүн жазылат.
+</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Арыз деген эмне?</h2>
+
+<p>
+Арыз — адамдын өзүнүн өтүнүчүн, сунушун же кайрылуусун расмий түрдө билдирген иш кагазы.
+</p>
+
+<ul>
+<li>Мектепке арыз</li>
+<li>Жумушка кабыл алуу арызы</li>
+<li>Өргүүгө чыгуу арызы</li>
+<li>Түшүндүрмө арызы</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Арыздын түзүлүшү</h2>
+
+<ul>
+<li>Кимге жазылганы</li>
+<li>Кимден экени</li>
+<li>Документтин аталышы</li>
+<li>Негизги текст</li>
+<li>Дата</li>
+<li>Кол тамга</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Арыздын үлгүсү</h2>
+
+<div class="example">
+Мектептин директору
+Асанов Б.Т. мырзага
+
+2-курсунун студенти:
+Мамасалиева Аселядан
+
+
+АРЫЗ
+
+Сизден 2 күнгө үй-бүлөлүк шартка байланыштуу
+сабактан бошотуп берүүңүздү суранам.
+
+26.05.2026
+Колу: __________
+</div>
+
+<button onclick="showMessage()">
+Көбүрөөк маалымат
+</button>
+
+<p id="msg" style="margin-top:15px;font-weight:bold;color:#1565c0;"></p>
+
+</div>
+
+<div class="card">
+<h2>Жыйынтык</h2>
+
+<p>
+Арыз иш кагазы расмий стильде жазылат. Ал так, түшүнүктүү жана кыска болушу керек.
+</p>
+</div>
+
+<div class="student">
+
+     <h2>
+        Сайтты жазган студент :
+     </h2>
+
+    <p>Мамасалиева Аселя Кубанычбековна</p>
+
+</div>
+
+</div>
+
+
+
+<footer>
+© 2026 Арыз иш кагазы сайты
+</footer>
+
+<script>
+function showMessage(){
+document.getElementById("msg").innerText =
+"Арыз жазууда грамматикалык каталар болбошу керек!";
+}
+</script>
+
+</body>
+</html>
